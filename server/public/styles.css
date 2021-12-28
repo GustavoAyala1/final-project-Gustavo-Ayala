@@ -1,0 +1,147 @@
+/* stylelint-disable selector-class-pattern */
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navBar {
+  display: flex;
+  background-color: #5acbee;
+  height: 100px;
+  align-items: center;
+}
+
+.half {
+  flex-basis: 50%;
+}
+
+.title {
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.formDiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.favorites {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.inputField {
+  padding: 5px 20px;
+}
+
+.searchBtn {
+  padding: 5px 20px;
+  background-color: #fff;
+  border-left: none;
+}
+
+.favFooter {
+  position: absolute;
+  width: 80%;
+  height: 50px;
+  background-color: #5acbee;
+  bottom: 0;
+  left: 15%;
+  border-radius: 25px 25px 0 0;
+}
+
+.favFooter:hover {
+  height: 100px;
+}
+
+.leftBar {
+  margin-left: 10px;
+  width: 100px;
+  height: 75%;
+  margin-top: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.leftBar img {
+  height: 100%;
+}
+
+.bodyDiv {
+  display: flex;
+  height: 100%;
+}
+
+.homeDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 30px 50px;
+}
+
+.homeRow {
+  width: 100%;
+}
+
+.bodyRow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
+
+.mainHome {
+  width: 100%;
+  height: 200px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.greyBox {
+  border-radius: 10px;
+  width: 200px;
+  height: 125px;
+  background-color: white;
+  flex-basis: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .inputField {
+    padding: 2px 5px;
+  }
+
+  .bodyRow {
+    flex-flow: wrap;
+  }
+
+  .greyBox {
+    flex-basis: 45%;
+    margin-top: 20px;
+  }
+
+  .leftBar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .inputField {
+    padding: 5px 10px;
+  }
+}
